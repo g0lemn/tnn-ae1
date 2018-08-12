@@ -1,0 +1,20 @@
+﻿@import '../base/colors';
+
+.popover {
+    box-shadow: 0 0 30px rgba(0,0,0,.30),0 5px 10px rgba(0,0,0,.30);
+    border: none;
+
+    .popover-header {
+        color: #fff !important;
+        font-weight: 600;
+        background-color: $primary-color;
+    }
+}
+
+.popover.bs-popover-auto[x-placement^="bottom"] .arrow::after, .popover.bs-popover-bottom .arrow::after {
+    border-bottom-color: $primary-color;
+}
+
+.popover.bs-popover-auto[x-placement^="bottom"] .popover-header::before, .popover.bs-popover-bottom .popover-header::before {
+    border-bottom: 1px solid $primary-color;
+}

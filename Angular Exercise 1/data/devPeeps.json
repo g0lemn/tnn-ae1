@@ -1,0 +1,29 @@
+[{
+  "name": "Rovehl Molina",
+  "rank": "JSE",
+  "years": 2,
+  "color": "blue",
+  "is_present": true,
+  "thumb": "content/images/sampleThumbnail.png"
+}, {
+  "name": "Marlo Ajeno",
+  "rank": "JSE",
+  "years": 1,
+  "color": "Orange",
+  "is_present": true,
+  "thumb": "content/images/sampleThumbnail.png"
+}, {
+  "name": "Florenz Cuizon",
+  "rank": "JSE",
+  "years": 2,
+  "color": "Violet",
+  "is_present": true,
+  "thumb": "content/images/sampleThumbnail.png"
+}, {
+  "name": "Flordeliza Asuncion",
+  "rank": "JSE",
+  "years": 3,
+  "color": "Pink",
+  "is_present": false,
+  "thumb": "content/images/sampleThumbnail.png"
+}]

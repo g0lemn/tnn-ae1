@@ -1,0 +1,142 @@
+﻿@import "../base/colors";
+
+.btn-group.bootstrap-select {
+    .btn-secondary {
+        padding-top: 4.5px;
+        padding-bottom: 4.5px;
+        border-radius: .2rem;
+        padding-left: 0.75rem;
+        font-size: 1em;
+        font-weight: 400;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+
+        &:active, &:focus {
+            background-color: #fff;
+            color: #495057;
+        }
+
+        &:hover {
+            color: #495057;
+        }
+    }
+
+    .dropdown-menu {
+        max-width: 100%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+        .bs-searchbox input {
+            font-size: 0.84em;
+        }
+
+        .dropdown-item {
+            font-size: 0.84em;
+            padding-left: 15px;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: #ffffff;
+            }
+        }
+
+        li.selected {
+            .dropdown-item {
+                &:hover {
+                    background-color: $primary-color;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        li.no-results {
+            font-size: 0.84em;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: 260px;
+    }
+}
+
+.bootstrap-select button[data-id="cmbLocation"] .filter-option::before {
+    content: "Location:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbDepartment"] .filter-option::before {
+    content: "Department:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbSupplier"] .filter-option::before {
+    content: "Supplier:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbOption"] .filter-option::before {
+    content: "Categorization:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbClass"] .filter-option::before {
+    content: "Class:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbSubClass"] .filter-option::before {
+    content: "SubClass:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbCategory"] .filter-option::before {
+    content: "Category:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}
+
+.bootstrap-select button[data-id="cmbChecker"] .filter-option::before {
+    content: "Checker:";
+    font-weight: bold;
+    font: Helvetica;
+    font-size: inherit;
+    text-rendering: auto;
+    padding-right: 5px;
+}

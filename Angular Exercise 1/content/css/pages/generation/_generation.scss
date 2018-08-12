@@ -1,0 +1,65 @@
+﻿@import '../../base/colors';
+
+#generation.page {
+    font-size: 0.84em;
+
+    .btn:disabled {
+        cursor: not-allowed;
+    }
+
+    input {
+        font-size: 1em;
+    }
+
+    .input-group {
+        .input-group-addon {
+            cursor: pointer;
+        }
+    }
+
+    .typeahead.dropdown-menu {
+        font-size: 1em;
+
+        li.active, li.active:hover {
+            background-color: #868e96;
+
+            .dropdown-item {
+                background-color: #868e96;
+                color: white;
+            }
+        }
+    }
+
+    .generation-footer div {
+        text-align: left;
+        margin: 6px 0px;
+
+        button.button-footer {
+            margin: 2px 2px;
+        }
+    }
+
+    span.badge {
+        font-size: 0.84em;
+    }
+
+    #btnClear {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 383px) {
+    #generation {
+        .button-footer {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 575px) {
+    #generation {
+        #txtBrand {
+            width: 260px;
+        }
+    }
+}

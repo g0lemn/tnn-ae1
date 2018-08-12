@@ -1,0 +1,29 @@
+﻿@import '../base/typography';
+
+.text-condensed {
+    font-family: $main-font-condensed;
+}
+
+.text-secondary {
+    color: $text-secondary !important;
+}
+
+.text-font-light {
+    font-weight: 400;
+}
+
+.text-semi-small {
+    font-size: 1em;
+}
+
+.text-dark {
+    color: $text-dark !important;
+}
+
+.page-title-divider {
+    margin-top: 0.65rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $main-font;
+}

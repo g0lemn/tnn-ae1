@@ -1,0 +1,36 @@
+﻿@import '../base/typography';
+@import '../base/colors';
+
+.badge.badge-pill {
+    font-size: 0.9em;
+
+    &.badge-default {
+        color: #fff;
+        background-color: $secondary-color;
+    }
+
+    &.badge-info {
+        color: #fff;
+        background-color: $info-color;
+    }
+
+    &.badge-warning {
+        color: #717171;
+        background-color: $warning-color;
+    }
+
+    &.badge-primary {
+        color: #fff;
+        background-color: $primary-color;
+    }
+
+    &.badge-danger {
+        color: #fff;
+        background-color: $danger-color;
+    }
+
+    &.badge-success {
+        color: #fff;
+        background-color: $success-color;
+    }
+}

@@ -1,0 +1,19 @@
+<div class="content">
+  <button ng-click="order = 'name'">Sort by Name</button>
+  <button ng-click="order = 'years'">Sort by Rank</button>
+  <input type="text" ng-model="search" placeholder="Search for Developers">
+  <ul>
+    <li ng-repeat="dev in devPeeps | orderBy: order | filter: search " ng-show="dev.is_present">
+      <img ng-src="{{dev.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px" ng-show="dev.thumb">
+      <h3> {{dev.name}}, {{dev.rank}}</h3>
+      <div class="remove" ng-click="resignDevPeep(dev)">x</div>
+      <span class="belt" style="background: {{dev.color}}">{{dev.years}}</span>
+    </li>
+  </ul>
+  <form ng-submit="newDevPeep()">
+    <input type="text" placeholder="Developer's Name" ng-model="newDev.DevName">
+    <input type="text" placeholder="Developer's Rank" ng-model="newDev.DevRank">
+    <input type="text" placeholder="Developer's Years" ng-model="newDev.DevYears">
+    <input type="submit" value="Add new Developer">
+  </form>
+</div>

@@ -1,0 +1,244 @@
+﻿@import '../../base/sizes';
+@import '../../base/colors';
+
+#components {
+    .list-group-divider {
+        display: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-container {
+
+        h5 {
+            display: inline-block;
+        }
+
+        .inner-forms {
+            width: 100%;
+
+            table {
+                tbody {
+                    tr {
+                        &:hover {
+                            .nav-container {
+                                opacity: 1;
+                            }
+                        }
+
+                        .nav-container {
+                            font-size: 1.1em;
+                            padding-top: 5px;
+                            opacity: 0;
+                            -webkit-transition: all .2s ease-in-out;
+                            transition: all .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal-toggle {
+            padding: .25rem 1rem;
+            margin-top: -7px;
+            font-size: .8rem;
+            line-height: 1.5;
+            border-radius: .2rem;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+    }
+
+    .tab-content {
+        .jumbotron {
+            overflow-x: hidden;
+            padding: 1rem;
+            background-color: #ffffff;
+        }
+    }
+
+    .modal {
+        &.update {
+            .modal-content {
+                .modal-header {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+    /*------------------------ Modal Titles ----------------------*/
+    #modalAddDocOrigin {
+        h5:after {
+            content: 'Add Document Origin';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Document Origin';
+            }
+        }
+    }
+
+    #modalAddDocProcessor {
+        h5:after {
+            content: 'Add Document Processor';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Document Processor';
+            }
+        }
+    }
+
+    #modalAddDocType {
+        h5:after {
+            content: 'Add Document Type';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Document Type';
+            }
+        }
+    }
+
+    #modalAddLegalEntity {
+        h5:after {
+            content: 'Add Legal Entity';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Legal Entity';
+            }
+        }
+    }
+
+    #modalAddOrganization {
+        .btn-group.bootstrap-select {
+            width: 100%;
+        }
+
+        h5:after {
+            content: 'Add Organization';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Organization';
+            }
+        }
+    }
+
+    #modalAddLocation {
+        .btn-group.bootstrap-select {
+            width: 100%;
+        }
+
+        h5:after {
+            content: 'Add Location';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Location';
+            }
+        }
+    }
+
+    #modalAddDepartment {
+        .btn-group.bootstrap-select {
+            width: 100%;
+        }
+
+        h5:after {
+            content: 'Add Department';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Department';
+            }
+        }
+    }
+
+    #modalAddLocationType {
+        h5:after {
+            content: 'Add Location Type';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Location Type';
+            }
+        }
+    }
+
+    #modalAddLocDestType {
+        .btn-group.bootstrap-select {
+            width: 100%;
+        }
+
+        h5:after {
+            content: 'Add Location Destination Type';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Location Destination Type';
+            }
+        }
+    }
+
+    #modalAddDocDestination {
+        .btn-group.bootstrap-select {
+            width: 100%;
+        }
+
+        h5:after {
+            content: 'Add Document Destination';
+        }
+
+        &.update {
+            h5:after {
+                content: 'Update Document Destination';
+            }
+        }
+    }
+    /*--------------------- End of Modal Titles ------------------*/
+}
+
+@media screen and (max-width: $bootstrap-breakpoint-md) {
+    #components {
+        .list-group-divider {
+            display: block;
+        }
+
+        .form-container {
+            .modal-toggle {
+                position: absolute;
+                right: 1.5rem;
+                margin-top: 0;
+            }
+
+            table {
+                tbody {
+                    tr {
+                        .nav-container {
+                            opacity: 1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $bootstrap-breakpoint-md) {
+    #components {
+        .form-container {
+            padding-left: 0;
+        }
+    }
+}

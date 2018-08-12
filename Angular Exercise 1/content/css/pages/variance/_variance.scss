@@ -1,0 +1,114 @@
+﻿#variance.page {
+    font-size: 0.84em;
+
+    input {
+        font-size: 1em;
+    }
+
+    .btn:disabled {
+        cursor: not-allowed;
+    }
+
+    .header-label {
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    th.th-checkbox {
+        width: 0px;
+    }
+
+    label {
+        &.select-all {
+            padding-right: 0;
+            margin-bottom: 0;
+            min-height: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    label {
+        &.select-all-disabled {
+            padding-right: 0;
+            margin-bottom: 0;
+            min-height: 1rem;
+            cursor: not-allowed;
+        }
+    }
+
+    .input-group {
+        #search-count.input-group-addon {
+            font-size: 1em;
+        }
+
+        #search-icon.input-group-addon {
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    }
+
+    .count-footer div {
+        text-align: left;
+        margin: 6px 0px;
+
+        button.button-footer {
+            margin: 2px 2px;
+        }
+    }
+
+    span.badge {
+        font-size: 0.84em;
+    }
+
+    #txtBarcode {
+        text-align: center;
+    }
+
+    table > tbody > tr > td {
+        button {
+            &.show-remarks {
+                padding: 4px 16px;
+            }
+        }
+
+        .bootstrap-select {
+            .dropdown-toggle {
+                padding-top: 3.5px;
+                padding-bottom: 3.5px;
+                font-size: .8em;
+            }
+
+            .dropdown-menu {
+                .bs-searchbox {
+                    .form-control {
+                        font-size: .8rem;
+                        padding: .25rem;
+                        margin-bottom: 0.25rem;
+                    }
+                }
+            }
+        }
+
+        select {
+            display: block !important;
+        }
+    }
+
+    table tbody tr div.bootstrap-select div.dropdown-menu {
+        top: 0;
+        right: 0;
+        left: auto;
+    }
+
+    table tbody tr div.bootstrap-select ul.dropdown-menu.inner {
+        max-height: 190px !important;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    #variance {
+        .button-footer {
+            width: 100%;
+        }
+    }
+}
