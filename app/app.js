@@ -1,4 +1,4 @@
-var angularApp = angular.module('angularExercise1', ['ngRoute']);
+var angularApp = angular.module('angularExercise1', ['ngRoute', 'ngAnimate']);
 
 // this will fire before the application runs
 angularApp.config(['$routeProvider', function($routeProvider){
