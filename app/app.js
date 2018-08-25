@@ -1,7 +1,10 @@
 var angularApp = angular.module('angularExercise1', ['ngRoute', 'ngAnimate']);
 
 // this will fire before the application runs
-angularApp.config(['$routeProvider', function($routeProvider){
+angularApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+
+  $locationProvider.html5Mode(true);
+
   $routeProvider
     .when('/home', {
       templateUrl: 'views/home.html',
@@ -10,6 +13,12 @@ angularApp.config(['$routeProvider', function($routeProvider){
     .when('/directory', {
       templateUrl: 'views/directory.html',
       controller: 'DevController'
+    }).when('/contact', {
+      templateUrl: 'views/contact.html',
+      controller: 'ContactController'
+    }).when('/contact-success', {
+      templateUrl: 'views/contact-success.html',
+      controller: 'ContactController'
     }).otherwise({
       redirectTo: '/home'
     });
@@ -65,5 +74,15 @@ angularApp.controller("DevController", ['$scope', '$http', function($scope, $htt
   $http({method: 'get', url: 'data/devPeeps.json'}).then(function(response){
     $scope.devPeeps = response.data;
   });
+
+$scope.removeAll = function(){
+  $scope.devPeeps = [];
+}
+}]);
+
+angularApp.controller("ContactController", ['$scope', '$location', function($scope, $location) {
+  $scope.sendMessage = function(){
+      $location.path('/contact-success');
+  }
 
 }]);

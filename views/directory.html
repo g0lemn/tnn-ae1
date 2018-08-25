@@ -2,7 +2,7 @@
   <button ng-click="order = 'name'">Sort by Name</button>
   <button ng-click="order = 'years'">Sort by Rank</button>
   <input type="text" ng-model="search" placeholder="Search for Developers">
-  <ul>
+  <ul id="dev-list">
     <li ng-repeat="dev in devPeeps | orderBy: order | filter: search " ng-show="dev.is_present">
       <img ng-src="{{dev.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px" ng-show="dev.thumb">
       <h3> {{dev.name}}, {{dev.rank}}</h3>
@@ -16,4 +16,5 @@
     <input type="text" placeholder="Developer's Years" ng-model="newDev.DevYears">
     <input type="submit" value="Add new Developer">
   </form>
+  <a href="" ng-click="removeAll()">Remove all Developers</a>
 </div>

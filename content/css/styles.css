@@ -53,6 +53,7 @@ main{
 
 .content{
   padding: 20px;
+  overflow: hidden;
 }
 
 .content button,
@@ -101,6 +102,14 @@ main{
   margin: 10px 0;
 }
 
+.content textarea{
+  width: 90%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 10px 0;
+}
+
 .content input[type="submit"]:last-child{
   width: 150px;
   display: block;
@@ -132,11 +141,38 @@ main.ng-enter.ng-enter-active {
   opacity:1;
 }
 
-/* now the element will fade out before it is removed from the DOM */
-/* .ng-leave {
-  transition:0.5s linear all;
-  opacity:1;
+#dev-list li.ng-enter {
+  transition: 0.2s linear all;
+  opacity: 0;
+  transform: translateY(30px);
 }
-.ng-leave.ng-leave-active {
-  opacity:0;
-} */
+
+#dev-list li.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#dev-list li.ng-leave {
+  transition: 0.4s linear all;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#dev-list li.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#dev-list li.ng-leave-stagger{
+  transition-delay: 0.2s;
+  transition-duration: 0;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+
+input[disabled="disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
