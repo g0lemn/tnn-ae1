@@ -71,7 +71,7 @@ angularApp.controller("DevController", ['$scope', '$http', function($scope, $htt
     $scope.devPeeps.splice(devPeep, 1);
   };
 
-  $http({method: 'get', url: 'data/devPeeps.json'}).then(function(response){
+  $http({method: 'get', url: 'https://projectexplorefirebase.firebaseio.com/.json'}).then(function(response){
     $scope.devPeeps = response.data;
   });
 
