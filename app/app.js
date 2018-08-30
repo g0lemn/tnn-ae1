@@ -3,14 +3,13 @@ var angularApp = angular.module('angularExercise1', ['ngRoute', 'ngAnimate']);
 // this will fire before the application runs
 angularApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true).hashPrefix('');
 
   $routeProvider
     .when('/home', {
       templateUrl: 'views/home.html',
       controller: 'DevController'
-    })
-    .when('/directory', {
+    }).when('/directory', {
       templateUrl: 'views/directory.html',
       controller: 'DevController'
     }).when('/contact', {
@@ -22,6 +21,7 @@ angularApp.config(['$routeProvider', '$locationProvider', function($routeProvide
     }).otherwise({
       redirectTo: '/home'
     });
+
 }]);
 
 // this will fire upon application runs
