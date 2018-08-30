@@ -1,0 +1,20 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Based on The Net Ninja Angular Tutorial.\r This is just a personal project. My road to Learning Angular Js Exercise 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g0lemn/tnn-ae1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g0lemn/tnn-ae1/issues"
+  },
+  "homepage": "https://github.com/g0lemn/tnn-ae1#readme"
+}
