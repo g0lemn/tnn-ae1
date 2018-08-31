@@ -4,7 +4,7 @@
   "description": "Based on The Net Ninja Angular Tutorial.\r This is just a personal project. My road to Learning Angular Js Exercise 1",
   "main": "server.js",
   "scripts": {
-    "start": "ng serve",
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
